@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5f1e489e39ef4e14bc0aa6478034941c" Name="Diagram1">
+        <EntityTypeShape EntityType="hostalModel.Cliente" Width="1.5" PointX="1.5" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="hostalModel.EstadoHabitacion" Width="1.5" PointX="1.5" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hostalModel.EstadoReserva" Width="1.5" PointX="3.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="hostalModel.EstadoUsuario" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hostalModel.Habitacion" Width="1.5" PointX="3.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="hostalModel.MetodoPago" Width="1.5" PointX="3" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hostalModel.Pasajero" Width="1.5" PointX="3.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="hostalModel.Reserva" Width="1.5" PointX="6" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="hostalModel.Rol" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hostalModel.Tarifa" Width="1.5" PointX="1.5" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="hostalModel.Usuario" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hostalModel.Venta" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="hostalModel.Reserva_Usuario" Width="1.5" PointX="8.25" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="hostalModel.FK_Cliente_Tarifa" ManuallyRouted="false" />
+        <AssociationConnector Association="hostalModel.FK_Pasajero_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="hostalModel.FK_Habitacion_EstadoHabitacion" ManuallyRouted="false" />
+        <AssociationConnector Association="hostalModel.FK_Reserva_EstadoReserva" ManuallyRouted="false" />
+        <AssociationConnector Association="hostalModel.FK_Usuario_EstadoUsuario" ManuallyRouted="false" />
+        <AssociationConnector Association="hostalModel.FK_Reserva_Habitacion" ManuallyRouted="false" />
+        <AssociationConnector Association="hostalModel.FK_Ventas_MetodoPago" ManuallyRouted="false" />
+        <AssociationConnector Association="hostalModel.FK_Reserva_Pasajero" ManuallyRouted="false" />
+        <AssociationConnector Association="hostalModel.FK_Reserva_Usuario_Reserva" ManuallyRouted="false" />
+        <AssociationConnector Association="hostalModel.FK_Usuario_Rol" ManuallyRouted="false" />
+        <AssociationConnector Association="hostalModel.FK_Reserva_Usuario_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="hostalModel.FK_Ventas_Usuario" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
